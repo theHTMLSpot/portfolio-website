@@ -11,3 +11,189 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: #ffffff;
+  width: 100vw;
+}
+
+.NavLink {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.NavLink a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Poetsen One';
+  font-size: 25px;
+  text-decoration: none;
+
+ 
+}
+
+.ActiveNavLink
+{
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+.ActiveNavLink a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Poetsen One';
+  font-size: 27px;
+  font-weight: 500;
+  text-decoration: underline; /* Ensures text is underlined */
+}
+#NavTitle {
+  font-size: 38px;
+  font-style: oblique;
+  font-weight: bold;
+  justify-content: left; /* This line isn't necessary */
+  text-align: left;
+  margin-right: auto; /* Align to the left */
+  margin-right: auto;
+
+}
+.ContentMenu
+{
+  width: 100vw;
+  height: 15vh;
+  background-color: #153448 ;
+  display: flex;
+  align-items: center;
+}
+.JoinUs {
+  display: flex;
+  justify-content: center; /* Center the content inside the button */
+  align-items: center; /* Center the content vertically */
+  width: 10vw;
+  height: 5vh;
+  text-align: center;
+  border: none;
+  background-color: transparent; /* Ensure the background is transparent */
+  position: relative; /* Set relative positioning for the pseudo-element */
+  overflow: hidden; /* Hide overflow to contain the animated background */
+  color: #DFD0B8; /* Set text color to ensure visibility */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.JoinUs {
+  display: inline-block;
+  width: 10vw;
+  height: 5vh;
+  text-align: center;
+  border: none;
+  background-color: transparent; /* Ensure the background is transparent */
+  position: relative; /* Set relative positioning for the pseudo-element */
+  overflow: hidden; /* Hide overflow to contain the animated background */
+  color: white; /* Set text color to ensure visibility */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: large;
+  font-weight: 700;
+}
+
+.JoinUs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #3C5B6F; /* The background color of the button */
+  transition: width 0.7s; /* Animate the width over 0.7 seconds */
+  z-index: 0; /* Ensure the background is below the text */
+}
+
+.JoinUs:hover::before {
+  width: 100%;
+}
+
+.JoinUs span {
+  position: relative; /* Ensure the text is above the pseudo-element */
+  z-index: 1;
+  border-radius: 15px;
+}
+.LearnReact {
+  display: inline-block;
+  width: 10vw;
+  height: 5vh;
+  text-align: center;
+  border: none;
+  background-color: transparent; /* Ensure the background is transparent */
+  position: relative; /* Set relative positioning for the pseudo-element */
+  overflow: hidden; /* Hide overflow to contain the animated background */
+  color: #DFD0B8; /* Set text color to ensure visibility */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.LearnReact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #3C5B6F; /* The background color of the button */
+  transition: width 0.7s; /* Animate the width over 0.7 seconds */
+  z-index: 0; /* Ensure the background is below the text */
+}
+
+.LearnReact:hover::before {
+  width: 100%;
+}
+
+.LearnReact span {
+  position: relative; /* Ensure the text is above the pseudo-element */
+  z-index: 1;
+}
+
+.Paragraph
+{
+  display: flex;
+  width: 50%;
+}
+
+.Paragraph p
+{
+  letter-spacing: 2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Poetsen One';
+
+}
+.typingAnimationContainer
+{
+  width:40%
+}
+#img
+{
+  display: inline-flex;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+
+}
+.circleBackground
+{
+  fill: none;
+  stroke: #ddd;
+  display: flex;
+  margin: 10px;
+}
